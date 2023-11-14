@@ -8,3 +8,7 @@ streamlit.text("Mango avocado salad with grilled chicken and honey mustard dress
 streamlit.text("Chocolate chip pancakes topped with bananas and whipped cream.")
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+
+import pandas
+my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.dataframe(my_fruit_list)
